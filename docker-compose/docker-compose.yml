@@ -33,7 +33,7 @@ services:
       - 61613:61613
     volumes:
       - ./enabled_plugins:/etc/rabbitmq/enabled_plugins
-      - rabbitmq-data
+      - rabbitmq-data:/var/lib/rabbitmq/data
     restart: unless-stopped
 
   keycloak:
